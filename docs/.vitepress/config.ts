@@ -21,11 +21,9 @@ module.exports = {
     returnToTopLabel: "回到顶部",
     darkModeSwitchLabel: "白/夜",
     displayAllHeaders: true, // 默认值：false
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/justcho' },
-    ],
+    socialLinks: [{ icon: "github", link: "https://github.com/justcho" }],
     // 导航栏配置
-    nav: [{text: '介绍', link: '/guide/'}],
+    nav: [{ text: "介绍", link: "/guide/" }],
     sidebar: {
       "/guide/": [
         {
@@ -45,7 +43,7 @@ module.exports = {
           text: "组件列表",
           items: [
             {
-              text: "Switch",
+              text: "Switch 开关",
               link: "/guide/switch",
             },
           ],
