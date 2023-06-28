@@ -6,7 +6,6 @@
   >
     <span></span>
   </button>
-  {{ value }}
 </template>
 <script lang="ts">
 import { ref } from "vue";
@@ -47,7 +46,7 @@ $h2: $h - 4px;
   }
 
   &.justd-checked {
-    background: #1890ff;
+    background: #10b981;
 
     > span {
       left: calc(100% - #{$h2} - 2px);
