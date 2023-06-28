@@ -1,11 +1,19 @@
 # 安装
 
+## npm
+
 ``` js
-npm install justd
+npm install justd --save
 ```
 
-#### 或
+## yarn
 
 ``` js
 yarn add justd
+```
+
+## pnpm
+
+``` js
+pnpm install justd --save
 ```

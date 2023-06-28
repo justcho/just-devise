@@ -12,7 +12,7 @@ import switchDemo from '../components/switchDemo.vue'
 
 ## 何时使用
 
- 需要表示开关状态/两种状态之间的切换时；
+ 需要表示开关状态/两种状态之间的切换时
 
 ## 基本用法
 

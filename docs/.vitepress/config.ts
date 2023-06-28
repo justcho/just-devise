@@ -9,7 +9,7 @@ module.exports = {
   // 头部head
   head: [
     // 添加图标
-    // ["link", { rel: "icon", href: "/favicon.ico" }],
+    ["link", { rel: "icon", href: "/logo.png" }],
   ],
   // 主题配置
   themeConfig: {
@@ -23,7 +23,7 @@ module.exports = {
     displayAllHeaders: true, // 默认值：false
     socialLinks: [{ icon: "github", link: "https://github.com/justcho" }],
     // 导航栏配置
-    nav: [{ text: "介绍", link: "/guide/" }],
+    nav: [{ text: "文档", link: "/guide/" }],
     sidebar: {
       "/guide/": [
         {
@@ -45,6 +45,10 @@ module.exports = {
             {
               text: "Switch 开关",
               link: "/guide/switch",
+            },
+            {
+              text: "Button 按钮",
+              link: "/guide/button",
             },
           ],
         },
