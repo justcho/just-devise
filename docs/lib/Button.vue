@@ -1,13 +1,46 @@
 <template>
-  <button class="justd-button" :class="`justd-theme-${theme}`"><slot /></button>
+  <button class="justd-button" :class="classes" :disabled="disabled">
+    <span v-if="loading" class="justd-loadingIndicator"></span>
+
+    <slot />
+  </button>
 </template>
 <script lang="ts">
+import { computed } from "vue";
+
 export default {
   props: {
     theme: {
       type: String,
       default: "button",
     },
+    size: {
+      type: String,
+      default: "normal",
+    },
+    level: {
+      type: String,
+      default: "normal",
+    },
+    disabled: {
+      type: Boolean,
+      default: false,
+    },
+    loading: {
+      type: Boolean,
+      default: false,
+    },
+  },
+  setup(props, context) {
+    const { theme, size, level } = props;
+    const classes = computed(() => {
+      return {
+        [`justd-theme-${theme}`]: theme,
+        [`justd-size-${size}`]: size,
+        [`justd-level-${level}`]: level,
+      };
+    });
+    return { classes };
   },
 };
 </script>
@@ -15,9 +48,10 @@ export default {
 $h: 32px;
 $border-color: #d9d9d9;
 $color: #333;
-$blue: #40a9ff;
+$green: #10b981;
 $radius: 4px;
 $red: red;
+$orange: orange;
 $grey: grey;
 
 .justd-button {
@@ -42,8 +76,8 @@ $grey: grey;
 
   &:hover,
   &:focus {
-    color: $blue;
-    border-color: $blue;
+    color: $green;
+    border-color: $green;
   }
 
   &:focus {
@@ -57,11 +91,11 @@ $grey: grey;
   &.justd-theme-link {
     border-color: transparent;
     box-shadow: none;
-    color: $blue;
+    color: $green;
 
     &:hover,
     &:focus {
-      color: lighten($blue, 10%);
+      color: lighten($green, 10%);
     }
   }
 
@@ -90,14 +124,14 @@ $grey: grey;
 
   &.justd-theme-button {
     &.justd-level-main {
-      background: $blue;
+      background: $green;
       color: white;
-      border-color: $blue;
+      border-color: $green;
 
       &:hover,
       &:focus {
-        background: darken($blue, 10%);
-        border-color: darken($blue, 10%);
+        background: darken($green, 10%);
+        border-color: darken($green, 10%);
       }
     }
 
@@ -110,6 +144,17 @@ $grey: grey;
       &:focus {
         background: darken($red, 10%);
         border-color: darken($red, 10%);
+      }
+    }
+    &.justd-level-warning {
+      background: $orange;
+      border-color: $orange;
+      color: white;
+
+      &:hover,
+      &:focus {
+        background: darken($orange, 10%);
+        border-color: darken($orange, 10%);
       }
     }
   }
@@ -127,11 +172,11 @@ $grey: grey;
 
   &.justd-theme-text {
     &.justd-level-main {
-      color: $blue;
+      color: $green;
 
       &:hover,
       &:focus {
-        color: darken($blue, 10%);
+        color: darken($green, 10%);
       }
     }
 
@@ -170,7 +215,7 @@ $grey: grey;
     display: inline-block;
     margin-right: 4px;
     border-radius: 8px;
-    border-color: $blue $blue $blue transparent;
+    border-color: $green $green $green transparent;
     border-style: solid;
     border-width: 2px;
     animation: justd-spin 1s infinite linear;

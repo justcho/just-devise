@@ -2,7 +2,7 @@
 import { h } from "vue";
 import Theme from "vitepress/theme";
 import "../../lib/justd.scss";
-import "./index.scss"
+// import "./index.scss"
 export default {
   ...Theme,
   Layout: () => {
@@ -15,3 +15,4 @@ export default {
     // app.component("Comment", comment);
   },
 };
+

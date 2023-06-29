@@ -20,7 +20,7 @@ hero:
       link: https://github.com/justcho
 
 features:
-  - icon: ✌️
+  - icon: 🖖
     title: 基于 Vue3
     details: 使用了 Vue3 Composition API
   - icon: 🚀
