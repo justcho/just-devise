@@ -3,6 +3,7 @@
     @click="toggle"
     class="justd-switch"
     :class="{ 'justd-checked': value }"
+    :disabled="disabled"
   >
     <span></span>
   </button>
@@ -12,10 +13,11 @@ import { ref } from "vue";
 export default {
   props: {
     value: Boolean,
+    disabled: Boolean,
   },
   setup(props, context) {
     const toggle = () => {
-      context.emit("update:value", !props.value);
+      context.emit("update:value", false);
     };
     return { toggle };
   },

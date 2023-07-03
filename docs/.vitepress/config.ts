@@ -51,12 +51,16 @@ module.exports = {
               text: "Button 按钮",
               link: "/guide/button",
             },
+            {
+              text: "Dialog 对话框",
+              link: "/guide/dialog",
+            },
           ],
         },
       ],
     },
     footer: {
-      copyright: "Copyright©2023 JustCho. All rights reserved.",
+      copyright: "Copyright©2023 JustCho.life",
     },
   },
 };

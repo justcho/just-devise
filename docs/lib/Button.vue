@@ -1,7 +1,6 @@
 <template>
   <button class="justd-button" :class="classes" :disabled="disabled">
     <span v-if="loading" class="justd-loadingIndicator"></span>
-
     <slot />
   </button>
 </template>

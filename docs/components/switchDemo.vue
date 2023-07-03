@@ -1,5 +1,7 @@
 <template>
   <Switch v-model:value="bool" />
+
+  <!-- <Switch disabled /> -->
 </template>
 <script lang="ts">
 import Switch from "../lib/Switch.vue";
