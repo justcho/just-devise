@@ -52,17 +52,17 @@ onMounted(() => {
   );
 });
 const slots = useSlots();
-const defaults = slots.default();
-defaults.forEach((tag) => {
+const defaults = slots.default?.();
+defaults?.forEach((tag) => {
   if (tag.type !== Tab) {
     throw new Error("Tabs子标签必须是Tab");
   }
 });
 const current = computed(() => {
-  return defaults.find((tag) => tag.props.title === props.selected);
+  return defaults.find((tag) => tag.props?.title === props.selected);
 });
 const titles = defaults.map((tag) => {
-  return tag.props.title;
+  return tag.props?.title;
 });
 
 const select = (title: string) => {
