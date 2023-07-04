@@ -4,44 +4,25 @@
     <slot />
   </button>
 </template>
-<script lang="ts">
+<script lang="ts" setup="props">
 import { computed } from "vue";
+// props的泛型写法
+const props = defineProps<{
+  theme?: "button" | "text" | "link";
+  size?: "normal" | "big" | "small";
+  level?: "normal" | "main" | "danger";
+  disabled?: boolean;
+  loading?: boolean;
+}>();
 
-export default {
-  props: {
-    theme: {
-      type: String,
-      default: "button",
-    },
-    size: {
-      type: String,
-      default: "normal",
-    },
-    level: {
-      type: String,
-      default: "normal",
-    },
-    disabled: {
-      type: Boolean,
-      default: false,
-    },
-    loading: {
-      type: Boolean,
-      default: false,
-    },
-  },
-  setup(props, context) {
-    const { theme, size, level } = props;
-    const classes = computed(() => {
-      return {
-        [`justd-theme-${theme}`]: theme,
-        [`justd-size-${size}`]: size,
-        [`justd-level-${level}`]: level,
-      };
-    });
-    return { classes };
-  },
-};
+const { theme, size, level } = props;
+const classes = computed(() => {
+  return {
+    [`justd-theme-${theme}`]: theme,
+    [`justd-size-${size}`]: size,
+    [`justd-level-${level}`]: level,
+  };
+});
 </script>
 <style lang="scss">
 $h: 32px;
