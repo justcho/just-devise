@@ -55,6 +55,10 @@ module.exports = {
               text: "Dialog 对话框",
               link: "/guide/dialog",
             },
+            {
+              text: "Tabs 标签页",
+              link: "/guide/tabs",
+            },
           ],
         },
       ],
