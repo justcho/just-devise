@@ -8,19 +8,16 @@
     <span></span>
   </button>
 </template>
-<script lang="ts">
-import { ref } from "vue";
-export default {
-  props: {
-    value: Boolean,
-    disabled: Boolean,
-  },
-  setup(props, context) {
-    const toggle = () => {
-      context.emit("update:value", false);
-    };
-    return { toggle };
-  },
+<script lang="ts" setup="props, contet">
+const props = defineProps<{
+  value?: boolean;
+  disabled?: boolean;
+}>();
+const emit = defineEmits<{
+  (e: "update:value", value: boolean): void;
+}>();
+const toggle = () => {
+  emit("update:value", !props.value);
 };
 </script>
 <style lang="scss">
