@@ -1,8 +1,8 @@
 <template>
   <div>
     <Tabs v-model:selected="x">
-      <Tab title="导航1">内容1</Tab>
-      <Tab title="导航2222222222">内容2</Tab>
+      <Tab title="导航">内容1</Tab>
+      <Tab title="选项卡自适应">内容2</Tab>
     </Tabs>
   </div>
 </template>
@@ -16,7 +16,7 @@ export default {
     Tab,
   },
   setup() {
-    const x = ref("导航2222222222");
+    const x = ref("选项卡自适应");
     return {
       x,
     };
