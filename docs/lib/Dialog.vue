@@ -10,63 +10,45 @@
           </header>
           <main><slot name="content" /></main>
           <footer>
-            <Button @click="ok">OK</Button>
-            <Button @click="cancel">Cancel</Button>
+            <Button @click="onClickOk">OK</Button>
+            <Button @click="onClickCancel">Cancel</Button>
           </footer>
         </div>
       </div>
     </Teleport>
   </template>
 </template>
-<script lang="ts">
+<script lang="ts" setup="props, context">
 import Button from "./Button.vue";
-export default {
-  props: {
-    visible: {
-      type: Boolean,
-      default: false,
-    },
-    closeOnclickOverlay: {
-      type: Boolean,
-      default: false,
-    },
-    ok: {
-      type: Function,
-    },
-    cancel: {
-      type: Function,
-    },
-  },
-  components: {
-    Button,
-  },
+// props 泛型
+const props = defineProps<{
+  visible?: boolean;
+  closeOnclickOverlay?: boolean;
+  ok?: () => boolean;
+  cancel?: () => void;
+}>();
+// emit泛型
+const emit = defineEmits<{
+  (e: "update:visible", visible: boolean): void;
+}>();
 
-  setup(props, context) {
-    const close = () => {
-      context.emit("update:visible", false);
-    };
-    const onClickOverlay = () => {
-      if (props.closeOnclickOverlay) {
-        close();
-      }
-    };
-    const ok = () => {
-      if (props.ok?.() !== false) {
-        close();
-      }
-    };
-    const cancel = () => {
-      if (props.cancel?.()) {
-        close();
-      }
-    };
-    return {
-      close,
-      onClickOverlay,
-      ok,
-      cancel,
-    };
-  },
+const close = () => {
+  emit("update:visible", false);
+};
+const onClickOverlay = () => {
+  if (props.closeOnclickOverlay) {
+    close();
+  }
+};
+const onClickOk = () => {
+  if (props.ok?.() !== false) {
+    close();
+  }
+};
+const onClickCancel = () => {
+  if (props.cancel?.()) {
+    close();
+  }
 };
 </script>
 

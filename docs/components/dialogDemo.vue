@@ -12,8 +12,6 @@
       <div>2222</div>
     </template>
   </Dialog>
-  <h1>示例2</h1>
-  <Button @click="showDialog">show</Button>
 </template>
 <script lang="ts">
 import { openDialog } from "../lib/openDialog";
@@ -34,19 +32,7 @@ export default {
       return false;
     };
     const f2 = () => {};
-    const showDialog = () => {
-      openDialog({
-        title: "标题",
-        content: "你好",
-        ok() {
-          console.log("ok");
-        },
-        cancel() {
-          console.log("cancel");
-        },
-      });
-    };
-    return { open, toggle, f1, f2, showDialog };
+    return { open, toggle, f1, f2 };
   },
 };
 </script>
