@@ -37,7 +37,7 @@ $grey: grey;
 .justd-button {
   box-sizing: border-box;
   height: $h;
-  padding: 0 12px;
+  padding: 0 12px !important;
   cursor: pointer;
   display: inline-flex;
   justify-content: center;

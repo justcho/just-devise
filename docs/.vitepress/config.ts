@@ -5,7 +5,7 @@ module.exports = {
   description: "基于 Vue3 的组件库",
   // 打包目录
   dest: "./dist",
-  base: "/",
+  base: "/justd/",
   // 头部head
   head: [
     // 添加图标
@@ -91,7 +91,8 @@ module.exports = {
       ],
     },
     footer: {
-      copyright: "Copyright©2023 JustCho.life",
+      copyright:
+        '<a href="https://justcho.life" target="_blank">Copyright © 2023 justcho.life</a>',
     },
   },
 };

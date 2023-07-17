@@ -10,7 +10,7 @@
         class="custom"
         style="height: 100px; background: rgba(16, 185, 129, 0.8); width: 200px"
       >
-        slider
+        sider
       </j-sider>
       <j-content
         class="custom"

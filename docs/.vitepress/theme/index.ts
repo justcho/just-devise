@@ -1,8 +1,8 @@
 // https://vitepress.dev/guide/custom-theme
 import { h } from "vue";
 import Theme from "vitepress/theme";
-import "../../lib/justd.scss";
-// import "./index.scss"
+// import "./justd.scss";
+import "./index.scss"
 export default {
   ...Theme,
   Layout: () => {
