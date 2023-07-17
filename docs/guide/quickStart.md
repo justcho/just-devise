@@ -1,3 +1,7 @@
+---
+prev: false
+next: false
+---
 # 快速上手
 
 <br/>
@@ -16,10 +20,7 @@ import {Button, Tabs, Tab, Switch} from "justd"
     <Button>按钮</Button>
   </div>
 </template>
-<script>
+<script setup>
 import {Button, Tabs, Tab, Switch} from "justd"
-export default {
-  components: {Button}
-}
 </script>
 ```

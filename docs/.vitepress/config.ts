@@ -1,4 +1,3 @@
-import { computed } from "vue";
 module.exports = {
   // 网站标题
   title: "Just Devise",
@@ -32,32 +31,60 @@ module.exports = {
           items: [
             {
               text: "安装",
-              link: "/guide/install",
+              link: "./install",
             },
             {
               text: "快速开始",
-              link: "/guide/quickStart",
+              link: "./quickStart",
             },
           ],
         },
         {
-          text: "组件列表",
+          text: "通用",
+          items: [
+            {
+              text: "Button 按钮",
+              link: "./button",
+            },
+          ],
+        },
+        {
+          text: "布局",
+          items: [
+            {
+              text: "Grid 栅格",
+              link: "./grid",
+            },
+            {
+              text: "Layout 布局",
+              link: "./layout",
+            },
+          ],
+        },
+        {
+          text: "数据录入",
           items: [
             {
               text: "Switch 开关",
-              link: "/guide/switch",
+              link: "./switch",
             },
-            {
-              text: "Button 按钮",
-              link: "/guide/button",
-            },
-            {
-              text: "Dialog 对话框",
-              link: "/guide/dialog",
-            },
+          ],
+        },
+        {
+          text: "数据展示",
+          items: [
             {
               text: "Tabs 标签页",
-              link: "/guide/tabs",
+              link: "./tabs",
+            },
+          ],
+        },
+        {
+          text: "反馈",
+          items: [
+            {
+              text: "Dialog 对话框",
+              link: "./dialog",
             },
           ],
         },

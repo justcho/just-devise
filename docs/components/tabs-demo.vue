@@ -1,24 +1,3 @@
----
-prev: false
-next: false
----
-<script setup>
-import TabsDemo from '../components/tabs-demo.vue'
-</script>
-
-# Tabs &nbsp;标签页
-
- >选项卡切换组件
-
-## 基本用法
-
-### 展示
-
-<tabs-demo/>
-
-### 代码
-
-```vue
 <template>
   <div>
     <Tabs v-model:selected="select">
@@ -33,5 +12,3 @@ import Tab from "../lib/tabs/Tab.vue";
 import { ref } from "vue";
 const select = ref("选项卡自适应");
 </script>
-
-```

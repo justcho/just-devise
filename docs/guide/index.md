@@ -1,5 +1,6 @@
 ---
-doc
+prev: false
+next: false
 ---
 # 前言
 

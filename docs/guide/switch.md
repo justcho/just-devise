@@ -1,9 +1,12 @@
 ---
-layout: doc
+prev: false
+next: false
 ---
 
 <script setup>
-import switchDemo from '../components/switchDemo.vue'
+import SwitchDemo1 from '../components/switch-demo-1.vue'
+import SwitchDemo2 from '../components/switch-demo-2.vue'
+
 </script>
 
 # Switch &nbsp;开关
@@ -16,9 +19,9 @@ import switchDemo from '../components/switchDemo.vue'
 
 ## 基本用法
 
-<br>
+### 展示
 
-<switchDemo />
+<switch-demo-1 />
 
 ### 代码
 
@@ -26,15 +29,27 @@ import switchDemo from '../components/switchDemo.vue'
 <template>
   <Switch v-model:value="bool" />
 </template>
-<script lang="ts">
+<script lang="ts" setup>
 import Switch from "../lib/Switch.vue";
 import { ref } from "vue";
-export default {
-  components: { Switch },
-  setup() {
-    const bool = ref(false);
-    return { bool };
-  },
-};
+const bool = ref(false);
+</script>
+
+```
+
+## 锁定状态
+
+### 展示
+
+<switch-demo-2 />
+
+### 代码
+
+```vue
+<template>
+  <Switch disabled />
+</template>
+<script lang="ts" setup>
+import Switch from "../lib/Switch.vue";
 </script>
 ```
