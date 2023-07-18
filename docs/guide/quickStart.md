@@ -4,10 +4,13 @@ next: false
 ---
 # 快速上手
 
-<br/>
+## 样式应用
 
-``` js
-import {Button, Tabs, Tab, Switch} from "justd"
+### main.js 引入样式
+
+```
+import 'justd/dist/lib/justd.css'
+
 ```
 
 ## 单文件组件
@@ -17,10 +20,11 @@ import {Button, Tabs, Tab, Switch} from "justd"
 ``` vue
 <template>
   <div>
-    <Button>按钮</Button>
+    <j-button>按钮</j-button>
   </div>
 </template>
 <script setup>
-import {Button, Tabs, Tab, Switch} from "justd"
+import {JButton} from "justd"
+
 </script>
 ```
