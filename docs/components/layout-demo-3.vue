@@ -1,6 +1,8 @@
 <template>
   <j-layout class="wrapper">
-    <j-sider class="custom" style="background: rgba(16, 185, 129, 0.8); width: 200px"
+    <j-sider
+      class="custom"
+      style="background: rgba(16, 185, 129, 0.8); width: 200px; height: 100%"
       >sider</j-sider
     >
     <j-layout>
@@ -23,11 +25,7 @@
   </j-layout>
 </template>
 <script lang="ts" setup>
-import JLayout from "../lib/layout/Layout.vue";
-import JHeader from "../lib/layout/Header.vue";
-import JContent from "../lib/layout/Content.vue";
-import JFooter from "../lib/layout/Footer.vue";
-import JSider from "../lib/layout/Sider.vue";
+import { JLayout, JHeader, JContent, JFooter, JSider } from "just-devise";
 </script>
 <style lang="scss" scoped>
 * {

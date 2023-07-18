@@ -1,20 +1,9 @@
 {
   "name": "justd",
   "version": "0.0.2",
-  "type": "module",
-  "files": [
-    "dist/lib/*"
-  ],
-  "main": "dist/lib/justd.js",
-  "module": "dist/lib/justd.esm.js",
   "author": "justcho",
   "license": "MIT",
   "devDependencies": {
-    "@vitejs/plugin-vue": "3.0.3",
-    "node-sass": "npm:sass@1.54.5",
-    "rollup-plugin-esbuild": "4.9.3",
-    "rollup-plugin-scss": "3.0.0",
-    "rollup-plugin-terser": "7.0.2",
     "sass": "^1.56.1",
     "vitepress": "^1.0.0-beta.3",
     "vue": "^3.3.4"
@@ -23,5 +12,8 @@
     "dev": "vitepress dev docs --host",
     "build": "vitepress build docs",
     "docs:serve": "vitepress serve docs"
+  },
+  "dependencies": {
+    "just-devise": "^0.0.1"
   }
 }

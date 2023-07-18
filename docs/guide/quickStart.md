@@ -4,16 +4,16 @@ next: false
 ---
 # 快速上手
 
-## 样式应用
+## 样式引入
 
 ### main.js 引入样式
 
 ```
-import 'justd/dist/lib/justd.css'
+import 'just-devise/dist/lib/justd.css'
 
 ```
 
-## 单文件组件
+## 组件使用
 
 ### 代码示例
 
@@ -24,7 +24,7 @@ import 'justd/dist/lib/justd.css'
   </div>
 </template>
 <script setup>
-import {JButton} from "justd"
+import {JButton} from "just-devise"
 
 </script>
 ```

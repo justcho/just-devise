@@ -18,22 +18,23 @@
   </j-layout>
 </template>
 <script lang="ts" setup>
-import JLayout from "../lib/layout/Layout.vue";
-import JHeader from "../lib/layout/Header.vue";
-import JContent from "../lib/layout/Content.vue";
-import JFooter from "../lib/layout/Footer.vue";
+import { JLayout, JHeader, JContent, JFooter } from "just-devise";
 </script>
 <style lang="scss" scoped>
 * {
   box-sizing: border-box;
+  width: 100%;
+
 }
 .wrapper {
   color: white;
-  margin: 10px 0 10px;
-  .custom {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  // margin: 10px 0 10px;
+  // border: 1px solid red;
+  // .custom {
+  //   width: 100%;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  // }
 }
 </style>

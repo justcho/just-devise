@@ -29,7 +29,7 @@ next: false
 </template>
 <script lang="ts" setup>
 import { ref } from "vue";
-import JIcon from "../lib/icons/Icon.vue";
+import {JIcon} from "justd"
 const list = ref<string[]>([
   "star",
   "search",

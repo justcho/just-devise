@@ -4,7 +4,7 @@
   <j-input value="只读" readonly class="custom" />
 </template>
 <script lang="ts" setup>
-import JInput from "../lib/input.vue";
+import { JInput } from "just-devise";
 </script>
 <style lang="scss">
 .custom {

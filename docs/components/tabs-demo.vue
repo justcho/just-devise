@@ -7,8 +7,7 @@
   </div>
 </template>
 <script lang="ts" setup>
-import JTabs from "../lib/tabs/Tabs.vue";
-import JTab from "../lib/tabs/Tab.vue";
+import { JTabs, JTab } from "just-devise";
 import { ref } from "vue";
 const select = ref("选项卡自适应");
 </script>

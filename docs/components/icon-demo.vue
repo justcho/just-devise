@@ -7,7 +7,7 @@
   </div>
 </template>
 <script lang="ts" setup>
-import JIcon from "../lib/icons/Icon.vue";
+import { JIcon } from "just-devise";
 import { ref } from "vue";
 const list = ref<string[]>([
   "star",

@@ -6,7 +6,7 @@
   </div>
 </template>
 <script lang="ts" setup>
-import JButton from "../lib/Button.vue";
+import { JButton } from "just-devise";
 </script>
 <style lang="scss" scoped>
 .demo-p {
