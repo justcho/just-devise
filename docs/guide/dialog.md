@@ -23,8 +23,8 @@ import DialogDemo2 from '../components/dialog-demo-2.vue'
 
 ```vue
 <template>
-  <Button @click="toggle">开启对话框</Button>
-  <Dialog
+  <j-button theme="button" level="main" @click="toggle">开启对话框</j-button>
+  <j-dialog
     v-model:visible="open"
     :closeOnclickOverlay="false"
     :ok="f1"
@@ -36,13 +36,10 @@ import DialogDemo2 from '../components/dialog-demo-2.vue'
       <p>Some contents...</p>
       <p>Some contents...</p>
     </template>
-  </Dialog>
+  </j-dialog>
 </template>
 <script lang="ts" setup>
-import Dialog from "../lib/Dialog.vue";
-import Button from "../lib/Button.vue";
 import { ref } from "vue";
-
 const open = ref(false);
 const toggle = () => {
   open.value = !open.value;
@@ -54,7 +51,6 @@ const f2 = () => {
   open.value = !open.value;
 };
 </script>
-
 ```
 
 ## 开启遮罩关闭
@@ -68,8 +64,8 @@ const f2 = () => {
 
 ```vue
 <template>
-  <Button theme="button" @click="toggle">开启对话框</Button>
-  <Dialog
+  <j-button theme="button" @click="toggle">开启对话框</j-button>
+  <j-dialog
     v-model:visible="open"
     :closeOnclickOverlay="true"
     :ok="f1"
@@ -81,6 +77,19 @@ const f2 = () => {
       <p>Some contents...</p>
       <p>Some contents...</p>
     </template>
-  </Dialog>
+  </j-dialog>
 </template>
+<script lang="ts" setup>
+import { ref } from "vue";
+const open = ref(false);
+const toggle = () => {
+  open.value = !open.value;
+};
+const f1 = () => {
+  open.value = !open.value;
+};
+const f2 = () => {
+  open.value = !open.value;
+};
+</script>
 ```

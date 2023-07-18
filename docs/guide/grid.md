@@ -70,29 +70,6 @@ next: false
     </j-col>
   </j-row>
 </template>
-<script lang="ts" setup>
-import JRow from "../lib/grid/Row.vue";
-import JCol from "../lib/grid/Col.vue";
-</script>
-<style lang="scss" scoped>
-* {
-  box-sizing: border-box;
-}
-.demoRow {
-  margin: 10px 0;
-}
-.demoCol {
-  height: 50px;
-  border: 1px solid #fff;
-  background: rgba(#10b981, 0.9);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-}
-</style>
-
-
 ```
 
 ## 设置gutter

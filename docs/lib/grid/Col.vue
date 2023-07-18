@@ -3,7 +3,7 @@
     <slot></slot>
   </div>
 </template>
-<script lang="ts" setup="props">
+<script lang="ts" setup>
 import { computed, inject } from "vue";
 
 const props = defineProps<{

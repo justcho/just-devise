@@ -22,7 +22,7 @@
     </div>
   </div>
 </template>
-<script lang="ts" setup="props, context">
+<script lang="ts" setup>
 import Tab from "./Tab.vue";
 import { computed, onMounted, ref, useSlots, watchEffect } from "vue";
 const props = defineProps<{

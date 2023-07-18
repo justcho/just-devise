@@ -18,7 +18,7 @@
     </Teleport>
   </template>
 </template>
-<script lang="ts" setup="props, context">
+<script lang="ts" setup>
 import Button from "./Button.vue";
 // props 泛型
 const props = defineProps<{

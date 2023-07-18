@@ -1,13 +1,13 @@
 <template>
   <div class="demo-p">
-    <Button>normal</Button>
-    <Button theme="button" level="main">main</Button>
-    <Button theme="button" level="warning">warning</Button>
-    <Button theme="button" level="danger">danger</Button>
+    <j-button>normal</j-button>
+    <j-button theme="button" level="main">main</j-button>
+    <j-button theme="button" level="warning">warning</j-button>
+    <j-button theme="button" level="danger">danger</j-button>
   </div>
 </template>
 <script lang="ts" setup>
-import Button from "../lib/Button.vue";
+import JButton from "../lib/Button.vue";
 </script>
 <style lang="scss" scoped>
 .demo-p {

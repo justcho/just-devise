@@ -42,27 +42,6 @@ next: false
     >
   </j-layout>
 </template>
-<script lang="ts" setup>
-import JLayout from "../lib/layout/Layout.vue";
-import JHeader from "../lib/layout/Header.vue";
-import JContent from "../lib/layout/Content.vue";
-import JFooter from "../lib/layout/Footer.vue";
-</script>
-<style lang="scss" scoped>
-* {
-  box-sizing: border-box;
-}
-.wrapper {
-  color: white;
-  margin: 10px 0 10px;
-  .custom {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-</style>
-
 ```
 
 ## 内容含侧边栏布局

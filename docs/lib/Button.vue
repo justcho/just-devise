@@ -4,7 +4,7 @@
     <slot />
   </button>
 </template>
-<script lang="ts" setup="props">
+<script lang="ts" setup>
 import { computed } from "vue";
 // props的泛型写法
 const props = defineProps<{

@@ -27,10 +27,9 @@ import SwitchDemo2 from '../components/switch-demo-2.vue'
 
 ``` vue
 <template>
-  <Switch v-model:value="bool" />
+  <j-switch v-model:value="bool" />
 </template>
 <script lang="ts" setup>
-import Switch from "../lib/Switch.vue";
 import { ref } from "vue";
 const bool = ref(false);
 </script>
@@ -47,9 +46,6 @@ const bool = ref(false);
 
 ```vue
 <template>
-  <Switch disabled />
+  <j-switch disabled />
 </template>
-<script lang="ts" setup>
-import Switch from "../lib/Switch.vue";
-</script>
 ```

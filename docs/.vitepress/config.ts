@@ -21,7 +21,7 @@ module.exports = {
     returnToTopLabel: "回到顶部",
     darkModeSwitchLabel: "白/夜",
     displayAllHeaders: true, // 默认值：false
-    socialLinks: [{ icon: "github", link: "https://github.com/justcho" }],
+    socialLinks: [{ icon: "github", link: "https://github.com/justcho/justd" }],
     // 导航栏配置
     nav: [{ text: "文档", link: "/guide/" }],
     sidebar: {
@@ -46,6 +46,10 @@ module.exports = {
               text: "Button 按钮",
               link: "./button",
             },
+            {
+              text: "Icon 图标",
+              link: "./icon",
+            },
           ],
         },
         {
@@ -64,6 +68,10 @@ module.exports = {
         {
           text: "数据录入",
           items: [
+            {
+              text: "Input 输入框",
+              link: "./input",
+            },
             {
               text: "Switch 开关",
               link: "./switch",

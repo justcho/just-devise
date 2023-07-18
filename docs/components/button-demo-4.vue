@@ -1,11 +1,11 @@
 <template>
   <div class="demo-p">
-    <Button theme="text" disabled>disabled</Button>
-    <Button theme="button" disabled>disabled</Button>
+    <j-button theme="text" disabled>disabled</j-button>
+    <j-button theme="button" disabled>disabled</j-button>
   </div>
 </template>
 <script lang="ts" setup>
-import Button from "../lib/Button.vue";
+import JButton from "../lib/Button.vue";
 </script>
 <style lang="scss" scoped>
 .demo-p {

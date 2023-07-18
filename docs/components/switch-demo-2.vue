@@ -1,6 +1,6 @@
 <template>
-  <Switch disabled />
+  <j-switch disabled />
 </template>
 <script lang="ts" setup>
-import Switch from "../lib/Switch.vue";
+import JSwitch from "../lib/Switch.vue";
 </script>

@@ -1,6 +1,6 @@
 <template>
-  <Button theme="button" @click="toggle">开启对话框</Button>
-  <Dialog
+  <j-button theme="button" @click="toggle">开启对话框</j-button>
+  <j-dialog
     v-model:visible="open"
     :closeOnclickOverlay="true"
     :ok="f1"
@@ -12,11 +12,11 @@
       <p>Some contents...</p>
       <p>Some contents...</p>
     </template>
-  </Dialog>
+  </j-dialog>
 </template>
 <script lang="ts" setup>
-import Dialog from "../lib/Dialog.vue";
-import Button from "../lib/Button.vue";
+import JDialog from "../lib/Dialog.vue";
+import JButton from "../lib/Button.vue";
 import { ref } from "vue";
 
 const open = ref(false);

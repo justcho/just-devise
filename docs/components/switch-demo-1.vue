@@ -1,8 +1,8 @@
 <template>
-  <Switch v-model:value="bool" />
+  <j-switch v-model:value="bool" />
 </template>
 <script lang="ts" setup>
-import Switch from "../lib/Switch.vue";
+import JSwitch from "../lib/Switch.vue";
 import { ref } from "vue";
 const bool = ref(false);
 </script>

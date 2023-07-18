@@ -1,11 +1,11 @@
 <template>
   <div class="demo-p">
-    <Button loading></Button>
-    <Button loading>loading</Button>
+    <j-button loading></j-button>
+    <j-button loading>loading</j-button>
   </div>
 </template>
 <script lang="ts" setup>
-import Button from "../lib/Button.vue";
+import JButton from "../lib/Button.vue";
 </script>
 <style lang="scss" scoped>
 .demo-p {

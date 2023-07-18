@@ -3,7 +3,7 @@
     <slot></slot>
   </div>
 </template>
-<script lang="ts" setup="props, { slots }">
+<script lang="ts" setup>
 import { computed, provide } from "vue";
 const props = defineProps<{
   gutter?: number | string;

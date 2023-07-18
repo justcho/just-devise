@@ -8,7 +8,7 @@
     <span></span>
   </button>
 </template>
-<script lang="ts" setup="props, context">
+<script lang="ts" setup>
 const props = defineProps<{
   value?: boolean;
   disabled?: boolean;

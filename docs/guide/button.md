@@ -27,20 +27,11 @@ next: false
 ``` vue
 <template>
   <div class="demo-p">
-    <Button theme="button">button</Button>
-    <Button theme="link">link</Button>
-    <Button theme="text">text</Button>
+    <j-button theme="button">normal</j-button>
+    <j-button theme="link">link</j-button>
+    <j-button theme="text">text</j-button>
   </div>
 </template>
-<script lang="ts" setup>
-import Button from "../lib/Button.vue";
-</script>
-<style lang="scss" scoped>
-.demo-p {
-  padding-top: 25px;
-}
-</style>
-
 ```
 
 ## 按钮尺寸
@@ -54,9 +45,9 @@ import Button from "../lib/Button.vue";
 ```vue
 <template>
   <div class="demo-p">
-    <Button theme="button">normal</Button>
-    <Button theme="button" size="big">big</Button>
-    <Button theme="button" size="small">small</Button>
+    <j-button theme="button">normal</j-button>
+    <j-button theme="button" size="big">big</j-button>
+    <j-button theme="button" size="small">small</j-button>
   </div>
 </template>
 ```
@@ -72,10 +63,10 @@ import Button from "../lib/Button.vue";
 ```vue
 <template>
   <div class="demo-p">
-    <Button>normal</Button>
-    <Button theme="button" level="main">main</Button>
-    <Button theme="button" level="warning">warning</Button>
-    <Button theme="button" level="danger">danger</Button>
+    <j-button>normal</j-button>
+    <j-button theme="button" level="main">main</j-button>
+    <j-button theme="button" level="warning">warning</j-button>
+    <j-button theme="button" level="danger">danger</j-button>
   </div>
 </template>
 ```
@@ -91,8 +82,8 @@ import Button from "../lib/Button.vue";
 ```vue
 <template>
   <div class="demo-p">
-    <Button theme="text" disabled>disabled</Button>
-    <Button theme="button" disabled>disabled</Button>
+    <j-button theme="text" disabled>disabled</j-button>
+    <j-button theme="button" disabled>disabled</j-button>
   </div>
 </template>
 ```
@@ -108,8 +99,8 @@ import Button from "../lib/Button.vue";
 ```vue
 <template>
   <div class="demo-p">
-    <Button loading></Button>
-    <Button loading>loading</Button>
+    <j-button loading></j-button>
+    <j-button loading>loading</j-button>
   </div>
 </template>
 ```
