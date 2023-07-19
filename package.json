@@ -2,7 +2,8 @@
   "name": "justd",
   "version": "0.0.2",
   "author": "justcho",
-  "main": "dist/lib/justd.js",
+  "type": "module",
+  "main": "dist/lib/just-devise.js",
   "license": "MIT",
   "devDependencies": {
     "sass": "^1.56.1",

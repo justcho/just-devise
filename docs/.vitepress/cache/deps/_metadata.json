@@ -1,23 +1,13 @@
 {
-  "hash": "98fee3c5",
-  "browserHash": "31602a6f",
+  "hash": "0ee00e80",
+  "browserHash": "3d920c0d",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/.pnpm/vue@3.3.4/node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "091c4b23",
-      "needsInterop": false
-    },
-    "just-devise": {
-      "src": "../../../../node_modules/.pnpm/just-devise@0.0.3/node_modules/just-devise/dist/lib/justd.esm.js",
-      "file": "just-devise.js",
-      "fileHash": "ed01b1ce",
+      "fileHash": "e5a802fe",
       "needsInterop": false
     }
   },
-  "chunks": {
-    "chunk-67UUJLDS": {
-      "file": "chunk-67UUJLDS.js"
-    }
-  }
+  "chunks": {}
 }
