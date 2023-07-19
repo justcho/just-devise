@@ -1,4 +1,6 @@
-module.exports = {
+import { defineConfig } from "vitepress";
+
+export default defineConfig({
   // 网站标题
   title: "Just Devise",
   // 网站描述
@@ -28,6 +30,7 @@ module.exports = {
       "/guide/": [
         {
           text: "基础",
+          collapsed: false,
           items: [
             {
               text: "安装",
@@ -41,6 +44,7 @@ module.exports = {
         },
         {
           text: "通用",
+          collapsed: false,
           items: [
             {
               text: "Button 按钮",
@@ -50,10 +54,15 @@ module.exports = {
               text: "Icon 图标",
               link: "./icon",
             },
+            {
+              text: "Typography 排版",
+              link: "./typography",
+            },
           ],
         },
         {
           text: "布局",
+          collapsed: false,
           items: [
             {
               text: "Grid 栅格",
@@ -67,6 +76,7 @@ module.exports = {
         },
         {
           text: "数据录入",
+          collapsed: false,
           items: [
             {
               text: "Input 输入框",
@@ -80,6 +90,7 @@ module.exports = {
         },
         {
           text: "数据展示",
+          collapsed: false,
           items: [
             {
               text: "Tabs 标签页",
@@ -89,6 +100,7 @@ module.exports = {
         },
         {
           text: "反馈",
+          collapsed: false,
           items: [
             {
               text: "Dialog 对话框",
@@ -103,4 +115,4 @@ module.exports = {
         '<a href="https://justcho.life" target="_blank">Copyright © 2023 justcho.life</a>',
     },
   },
-};
+});

@@ -5,7 +5,6 @@ next: false
 
 <script setup>
   import IconDemo from '../components/icon-demo.vue'
-
 </script>
 
 # Icon &nbsp;图标
@@ -41,6 +40,8 @@ const list = ref([
   "out",
   "fail",
   "time",
+  "copy",
+  "modify",
 ]);
 </script>
 ```

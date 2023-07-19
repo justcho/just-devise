@@ -42,3 +42,8 @@ body {
   fill: currentColor;
   overflow: hidden;
 }
+
+.VPContent .has-active {
+	// padding-top: var(--vp-nav-height) !important;
+  color: red;
+}

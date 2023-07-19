@@ -2,11 +2,17 @@
   "name": "justd",
   "version": "0.0.2",
   "author": "justcho",
+  "main": "dist/lib/justd.js",
   "license": "MIT",
   "devDependencies": {
     "sass": "^1.56.1",
     "vitepress": "^1.0.0-beta.3",
-    "vue": "^3.3.4"
+    "vue": "^3.3.4",
+    "node-sass": "npm:sass@1.54.5",
+    "rollup-plugin-esbuild": "4.9.3",
+    "rollup-plugin-scss": "3.0.0",
+    "rollup-plugin-terser": "7.0.2",
+    "@vitejs/plugin-vue": "^4.2.3"
   },
   "scripts": {
     "dev": "vitepress dev docs --host",

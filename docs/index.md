@@ -17,7 +17,7 @@ hero:
       link: /guide/
     - theme: alt
       text: 在 Gihub 上查看
-      link: https://github.com/justcho
+      link: https://github.com/justcho/just-devise-vue
 
 features:
   - icon: 🖖

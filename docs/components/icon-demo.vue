@@ -20,6 +20,8 @@ const list = ref([
   "out",
   "fail",
   "time",
+  "copy",
+  "modify",
 ]);
 </script>
 <style lang="scss" scoped>

@@ -14,6 +14,6 @@ git init
 git add -A
 git commit -m 'deploy'
 
-git push -f git@github.com:justcho/justd.git master:page
+git push -f git@github.com:justcho/just-devise.git master:page
 
 cd -
