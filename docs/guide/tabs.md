@@ -1,7 +1,4 @@
----
-prev: false
-next: false
----
+
 <script setup>
 import TabsDemo from '../components/tabs-demo.vue'
 </script>

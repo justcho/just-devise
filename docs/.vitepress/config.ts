@@ -22,6 +22,7 @@ export default defineConfig({
     sidebarMenuLabel: "菜单",
     returnToTopLabel: "回到顶部",
     darkModeSwitchLabel: "白/夜",
+    docFooter: { prev: "上一篇", next: "下一篇" },
     displayAllHeaders: true, // 默认值：false
     socialLinks: [{ icon: "github", link: "https://github.com/justcho/justd" }],
     // 导航栏配置
@@ -36,7 +37,7 @@ export default defineConfig({
             link: "/guide/install",
           },
           {
-            text: "快速开始",
+            text: "快速上手",
             link: "/guide/quickStart",
           },
         ],

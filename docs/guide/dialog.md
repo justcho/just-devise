@@ -1,7 +1,4 @@
----
-prev: false
-next: false
----
+
 <script setup>
 import DialogDemo1 from '../components/dialog-demo-1.vue'
 import DialogDemo2 from '../components/dialog-demo-2.vue'

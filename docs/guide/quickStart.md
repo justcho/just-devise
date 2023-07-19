@@ -1,7 +1,4 @@
----
-prev: false
-next: false
----
+
 # 快速上手
 
 ## 样式引入

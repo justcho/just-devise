@@ -1,7 +1,3 @@
----
-prev: false
-next: false
----
 
 <script setup>
 import SwitchDemo1 from '../components/switch-demo-1.vue'

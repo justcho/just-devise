@@ -1,7 +1,3 @@
----
-prev: false
-next: false
----
 
 <script setup>
   import ButtonDemo1 from '../components/button-demo-1.vue'

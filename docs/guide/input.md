@@ -1,7 +1,3 @@
----
-prev: false
-next: false
----
 
 <script setup>
   import InputDemo1 from '../components/input-demo-1.vue'

@@ -1,7 +1,4 @@
----
-prev: false
-next: false
----
+
 # 安装
 
 ## npm

@@ -1,7 +1,3 @@
----
-prev: false
-next: false
----
 
 <script setup>
   import GridDemo1 from '../components/grid-demo-1.vue'

@@ -1,7 +1,3 @@
----
-prev: false
-next: false
----
 
 <script setup>
     import LayoutDemo1 from '../components/layout-demo-1.vue'

@@ -1,12 +1,13 @@
 <template>
   <svg class="j-icon">
-    <use :xlink:href="`#j-${name}`"></use>
+    <use :xlink:href="`#j-${name}`" :fill="color"></use>
   </svg>
 </template>
 <script lang="ts" setup>
 import { onMounted } from "vue";
 const props = defineProps<{
   name: string;
+  color: string;
 }>();
 
 onMounted(() => {
