@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   just-devise:
-    specifier: ^0.0.2
-    version: 0.0.2
+    specifier: ^0.0.3
+    version: 0.0.3
 
 devDependencies:
   sass:
@@ -745,8 +745,8 @@ packages:
     resolution: {integrity: sha512-gfFQZrcTc8CnKXp6Y4/CBT3fTc0OVuDofpre4aEeEpSBPV5X5v4+Vmx+8snU7RLPrNHPKSgLxGo9YuQzz20o+w==}
     dev: true
 
-  /just-devise@0.0.2:
-    resolution: {integrity: sha512-O1wrm18KpUQppfR6Cpr34raLRguhehEIOYrHHMEnTHUZ/AXT4vfDiXfwOvMxygwOogYFNpfCtkL7C69L8p/hPg==}
+  /just-devise@0.0.3:
+    resolution: {integrity: sha512-s+yxzT9xGff+veT9Lwn3bqjHIneih578dB57CNPn2x4pOD0PzF82t/xhPrZ5zKF1Y2jglasY0R/zlYihhw88RA==}
     dependencies:
       vue: 3.3.4
     dev: false

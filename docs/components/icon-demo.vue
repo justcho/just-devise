@@ -6,10 +6,10 @@
     </div>
   </div>
 </template>
-<script lang="ts" setup>
-import { JIcon } from "just-devise";
+<script setup>
+import JIcon from "../lib/icons/Icon.vue";
 import { ref } from "vue";
-const list = ref<string[]>([
+const list = ref([
   "star",
   "search",
   "message",

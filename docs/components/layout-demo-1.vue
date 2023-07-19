@@ -17,8 +17,11 @@
     >
   </j-layout>
 </template>
-<script lang="ts" setup>
-import { JLayout, JHeader, JContent, JFooter } from "just-devise";
+<script setup>
+import JLayout from "../lib/layout/Layout.vue";
+import JHeader from "../lib/layout/Header.vue";
+import JContent from "../lib/layout/Content.vue";
+import JFooter from "../lib/layout/Footer.vue";
 </script>
 <style lang="scss" scoped>
 * {

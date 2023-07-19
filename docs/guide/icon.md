@@ -27,10 +27,10 @@ next: false
     </div>
   </div>
 </template>
-<script lang="ts" setup>
+<script setup>
 import { ref } from "vue";
-import {JIcon} from "justd"
-const list = ref<string[]>([
+import {JIcon} from "just-devise"
+const list = ref([
   "star",
   "search",
   "message",

@@ -38,7 +38,7 @@ import DialogDemo2 from '../components/dialog-demo-2.vue'
     </template>
   </j-dialog>
 </template>
-<script lang="ts" setup>
+<script setup>
 import { JButton, JDialog } from "just-devise";
 import { ref } from "vue";
 const open = ref(false);
@@ -80,7 +80,7 @@ const f2 = () => {
     </template>
   </j-dialog>
 </template>
-<script lang="ts" setup>
+<script setup>
 import { JButton, JDialog } from "just-devise";
 import { ref } from "vue";
 const open = ref(false);

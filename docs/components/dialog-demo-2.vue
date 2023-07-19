@@ -14,8 +14,9 @@
     </template>
   </j-dialog>
 </template>
-<script lang="ts" setup>
-import { JButton, JDialog } from "just-devise";
+<script setup>
+import JButton from "../lib/Button.vue";
+import JDialog from "../lib/Dialog.vue";
 
 import { ref } from "vue";
 

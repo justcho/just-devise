@@ -27,7 +27,8 @@ import TabsDemo from '../components/tabs-demo.vue'
     </j-tabs>
   </div>
 </template>
-<script lang="ts" setup>
+<script setup>
+import {JTabs,JTab} from "just-devise"
 import { ref } from "vue";
 const select = ref("选项卡自适应");
 </script>

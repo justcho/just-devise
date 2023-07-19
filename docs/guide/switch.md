@@ -29,7 +29,8 @@ import SwitchDemo2 from '../components/switch-demo-2.vue'
 <template>
   <j-switch v-model:value="bool" />
 </template>
-<script lang="ts" setup>
+<script setup>
+import {JSwitch} from "just-devise"
 import { ref } from "vue";
 const bool = ref(false);
 </script>

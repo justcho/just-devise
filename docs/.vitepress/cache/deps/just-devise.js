@@ -26,7 +26,7 @@ import {
   withCtx
 } from "./chunk-67UUJLDS.js";
 
-// node_modules/.pnpm/just-devise@0.0.2/node_modules/just-devise/dist/lib/justd.esm.js
+// node_modules/.pnpm/just-devise@0.0.3/node_modules/just-devise/dist/lib/justd.esm.js
 var C = ["disabled"];
 var L = [createBaseVNode("span", null, null, -1)];
 var S = (e, t) => {

@@ -45,8 +45,9 @@
     </j-col>
   </j-row>
 </template>
-<script lang="ts" setup>
-import { JRow, JCol } from "just-devise";
+<script setup>
+import JRow from "../lib/grid/Row.vue";
+import JCol from "../lib/grid/Col.vue";
 </script>
 <style lang="scss" scoped>
 * {

@@ -25,6 +25,5 @@ import 'just-devise/dist/lib/justd.css'
 </template>
 <script setup>
 import {JButton} from "just-devise"
-
 </script>
 ```
