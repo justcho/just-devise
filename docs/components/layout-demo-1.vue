@@ -23,18 +23,15 @@ import { JLayout, JHeader, JContent, JFooter } from "just-devise";
 <style lang="scss" scoped>
 * {
   box-sizing: border-box;
-  width: 100%;
-
 }
 .wrapper {
   color: white;
-  // margin: 10px 0 10px;
-  // border: 1px solid red;
-  // .custom {
-  //   width: 100%;
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-  // }
+  margin: 10px 0 10px;
+  .custom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 </style>

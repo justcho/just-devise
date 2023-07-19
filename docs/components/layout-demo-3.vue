@@ -2,7 +2,7 @@
   <j-layout class="wrapper">
     <j-sider
       class="custom"
-      style="background: rgba(16, 185, 129, 0.8); width: 200px; height: 100%"
+      style="background: rgba(16, 185, 129, 0.8); width: 200px;"
       >sider</j-sider
     >
     <j-layout>

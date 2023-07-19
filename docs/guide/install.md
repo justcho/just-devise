@@ -7,17 +7,17 @@ next: false
 ## npm
 
 ``` js
-npm install justd --save
+npm install just-devise --save
 ```
 
 ## yarn
 
 ``` js
-yarn add justd
+yarn add just-devise
 ```
 
 ## pnpm
 
 ``` js
-pnpm install justd --save
+pnpm install just-devise --save
 ```

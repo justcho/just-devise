@@ -32,7 +32,6 @@ import { JLayout, JHeader, JContent, JFooter, JSider } from "just-devise";
 <style lang="scss" scoped>
 * {
   box-sizing: border-box;
-  width: 100%;
 }
 .wrapper {
   color: white;
