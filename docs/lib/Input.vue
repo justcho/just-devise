@@ -17,7 +17,7 @@
       ref="textareaRef"
       :placeholder="placeholder"
       v-model="inputValue"
-      @input="adjustSize"
+      @input="adjustHeight"
       :rows="minRows ?? 1"
     ></textarea>
   </div>
@@ -47,7 +47,7 @@ const { minRows, maxRows } = autoSize;
 const textareaRef = ref<HTMLTextAreaElement>(null);
 
 onMounted(() => {
-  autoSize && type === "textarea" && adjustSize();
+  autoSize && type === "textarea" && adjustHeight();
 });
 watch(
   () => inputValue.value,
@@ -56,11 +56,10 @@ watch(
   }
 );
 const lineHeight = 20; // 每行的高度
-const adjustSize = () => {
+const adjustHeight = () => {
   const textarea = textareaRef.value;
   textarea.style.height = "auto";
   if (maxRows) textarea.style.maxHeight = maxRows * lineHeight + "px";
-
   const height = textarea.scrollHeight;
   textarea.style.height = `${height}px`;
   const rowsNum = Math.ceil(height / lineHeight);
