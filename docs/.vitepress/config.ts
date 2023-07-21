@@ -24,7 +24,7 @@ export default defineConfig({
     darkModeSwitchLabel: "白/夜",
     docFooter: { prev: "上一篇", next: "下一篇" },
     displayAllHeaders: true, // 默认值：false
-    socialLinks: [{ icon: "github", link: "https://github.com/justcho/justd" }],
+    // socialLinks: [{ icon: "github", link: "https://github.com/justcho/justd" }],
     // 导航栏配置
     nav: [{ text: "文档", link: "/guide/" }],
     sidebar: [
@@ -54,10 +54,10 @@ export default defineConfig({
             text: "Icon 图标",
             link: "/guide/icon",
           },
-          {
-            text: "Typography 排版",
-            link: "/guide/typography",
-          },
+          // {
+          //   text: "Typography 排版",
+          //   link: "/guide/typography",
+          // },
         ],
       },
       {

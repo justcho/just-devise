@@ -1,25 +1,33 @@
 {
-  "name": "just-devise",
-  "version": "0.0.2",
+  "name": "justd",
+  "version": "1.0.0-beta.1",
+  "description": "基于 Vue 3，面向开发者的组件库",
   "author": "justcho",
-  "main": "dist/lib/just-devise.js",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justcho/justdevise.git"
+  },
+  "homepage": "https://justcho.github.io/just-devise/",
+  "main": "dist/lib/justd.js",
+  "files": [
+    "dist/lib/*"
+  ],
+  "module": "dist/lib/justd.esm.js",
   "license": "MIT",
   "devDependencies": {
     "sass": "^1.56.1",
-    "vitepress": "^1.0.0-beta.3",
+    "vitepress": "^1.0.0-beta.5",
     "vue": "^3.3.4",
     "node-sass": "npm:sass@1.54.5",
     "rollup-plugin-esbuild": "4.9.3",
     "rollup-plugin-scss": "3.0.0",
     "rollup-plugin-terser": "7.0.2",
-    "@vitejs/plugin-vue": "^4.2.3"
+    "@vitejs/plugin-vue": "^3.0.3"
   },
   "scripts": {
     "dev": "vitepress dev docs --host",
     "build": "vitepress build docs",
     "docs:serve": "vitepress serve docs"
-  },
-  "dependencies": {
-    "just-devise": "^0.0.3"
   }
 }

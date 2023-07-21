@@ -4,6 +4,7 @@
   </svg>
 </template>
 <script lang="ts" setup>
+// import "./svg.js";
 import { onMounted } from "vue";
 const props = defineProps<{
   name: string;

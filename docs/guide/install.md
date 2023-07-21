@@ -4,17 +4,17 @@
 ## npm
 
 ``` js
-npm install just-devise --save
+npm install justd
 ```
 
 ## yarn
 
 ``` js
-yarn add just-devise
+yarn add justd
 ```
 
 ## pnpm
 
 ``` js
-pnpm install just-devise --save
+pnpm install justd
 ```

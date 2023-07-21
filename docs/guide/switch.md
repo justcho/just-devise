@@ -15,7 +15,7 @@ import SwitchDemo2 from '../components/switch-demo-2.vue'
 
 ## 基本用法
 
-### 展示
+### 预览
 
 <switch-demo-1 />
 
@@ -26,7 +26,7 @@ import SwitchDemo2 from '../components/switch-demo-2.vue'
   <j-switch v-model:value="bool" />
 </template>
 <script setup>
-import {JSwitch} from "just-devise"
+import {JSwitch} from "justd"
 import { ref } from "vue";
 const bool = ref(false);
 </script>
@@ -35,7 +35,7 @@ const bool = ref(false);
 
 ## 锁定状态
 
-### 展示
+### 预览
 
 <switch-demo-2 />
 

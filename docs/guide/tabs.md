@@ -9,7 +9,7 @@ import TabsDemo from '../components/tabs-demo.vue'
 
 ## 基本用法
 
-### 展示
+### 预览
 
 <tabs-demo/>
 
@@ -25,7 +25,7 @@ import TabsDemo from '../components/tabs-demo.vue'
   </div>
 </template>
 <script setup>
-import {JTabs,JTab} from "just-devise"
+import {JTabs,JTab} from "justd"
 import { ref } from "vue";
 const select = ref("选项卡自适应");
 </script>

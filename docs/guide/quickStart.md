@@ -6,7 +6,7 @@
 ### main.js 引入样式
 
 ```
-import 'just-devise/dist/lib/justd.css'
+import 'justd/dist/lib/justd.css'
 
 ```
 
@@ -21,6 +21,6 @@ import 'just-devise/dist/lib/justd.css'
   </div>
 </template>
 <script setup>
-import {JButton} from "just-devise"
+import {JButton} from "justd"
 </script>
 ```

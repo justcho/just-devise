@@ -6,12 +6,14 @@
 # Icon &nbsp;图标
 
 > 语义化的矢量图形
+>
+## 基本用法
 
-## 展示
+### 预览
 
 <icon-demo />
 
-## 代码
+### 代码
 
 ```vue
 <template>
@@ -23,7 +25,7 @@
   </div>
 </template>
 <script setup>
-import JIcon from "../lib/icons/Icon.vue";
+import {JIcon} from "justd";
 import { ref } from "vue";
 const list = ref([
   { name: "star", color: "red" },

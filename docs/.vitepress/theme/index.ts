@@ -3,7 +3,6 @@ import { h } from "vue";
 import Theme from "vitepress/theme";
 // import "./justd.scss";
 import "./index.scss";
-import "just-devise/dist/lib/justd.css";
 
 export default {
   ...Theme,

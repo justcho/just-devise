@@ -11,7 +11,7 @@ import DialogDemo2 from '../components/dialog-demo-2.vue'
 
 ## 基本用法
 
-### 展示
+### 预览
 
 <br />
 <dialog-demo-1 />
@@ -36,7 +36,7 @@ import DialogDemo2 from '../components/dialog-demo-2.vue'
   </j-dialog>
 </template>
 <script setup>
-import { JButton, JDialog } from "just-devise";
+import { JButton, JDialog } from "justd";
 import { ref } from "vue";
 const open = ref(false);
 const toggle = () => {
@@ -53,7 +53,7 @@ const f2 = () => {
 
 ## 开启遮罩关闭
 
-### 展示
+### 预览
 
 <br />
 <dialog-demo-2 />
@@ -78,7 +78,7 @@ const f2 = () => {
   </j-dialog>
 </template>
 <script setup>
-import { JButton, JDialog } from "just-devise";
+import { JButton, JDialog } from "justd";
 import { ref } from "vue";
 const open = ref(false);
 const toggle = () => {
