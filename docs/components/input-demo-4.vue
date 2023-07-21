@@ -1,14 +1,19 @@
 <template>
   <j-input
     type="textarea"
-    value="input"
-    placeholder="请输入内容"
+    placeholder="根据内容行数自适应高度"
     auto-size
+    class="custom"
+  />
+
+  <j-input
+    type="textarea"
+    placeholder="限制内容行数自适应高度"
+    :auto-size="{ minRows: 2, maxRows: 4 }"
     class="custom"
   />
 </template>
 <script setup>
-import { ref } from "vue";
 import JInput from "../lib/Input.vue";
 </script>
 <style lang="scss">

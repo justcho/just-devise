@@ -4,7 +4,6 @@
   import InputDemo2 from '../components/input-demo-2.vue'
   import InputDemo3 from '../components/input-demo-3.vue'
   import InputDemo4 from '../components/input-demo-4.vue'
-
 </script>
 
 # Input &nbsp;输入框
@@ -22,9 +21,9 @@
 ```vue
 <template>
   <j-input placeholder="请输入" class="custom" />
+  <j-input error="error" value="错误状态" class="custom" />
   <j-input value="只读" readonly class="custom" />
   <j-input value="禁用" disabled class="custom" />
-
 </template>
 ```
 
@@ -62,7 +61,7 @@ const inputValue = ref("1");
 </script>
 ```
 
-## 文本框
+## 适应文本高度的文本域
 
 ### 预览
 
@@ -71,5 +70,12 @@ const inputValue = ref("1");
 ### 代码
 
 ```vue
+  <j-input type="textarea" placeholder="请输入内容" auto-size class="custom" />
 
+ <j-input
+    type="textarea"
+    placeholder="请输入内容"
+    :auto-size="{ minRows: 2, maxRows: 4 }"
+    class="custom"
+  />
 ```

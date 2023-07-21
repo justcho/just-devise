@@ -7,22 +7,24 @@
       :readonly="readonly"
       :placeholder="placeholder"
     />
-    <!-- <template v-if="error">
-            <icon name="fail" class="icon-error"></icon>
-            <span class="errorMessage">{{error}}</span>
-        </template> -->
+    <template v-if="error">
+      <j-icon name="fail" color="red" class="icon-error"></j-icon>
+      <span class="errorMessage">{{ error }}</span>
+    </template>
   </div>
   <div class="justd-input" v-else>
     <textarea
       ref="textareaRef"
       :placeholder="placeholder"
       v-model="inputValue"
+      @input="adjustSize"
+      :rows="minRows ?? 1"
     ></textarea>
   </div>
 </template>
 <script lang="ts" setup>
-import { onMounted, ref, nextTick, watch } from "vue";
-
+import JIcon from "./icons/Icon.vue";
+import { onMounted, ref, watch } from "vue";
 const props = defineProps<{
   value?: string;
   disabled?: boolean;
@@ -40,12 +42,12 @@ const emit = defineEmits<{
 
 const inputValue = ref(value);
 
-const { minRow, maxRow } = autoSize;
+const { minRows, maxRows } = autoSize;
 
 const textareaRef = ref<HTMLTextAreaElement>(null);
 
 onMounted(() => {
-  // nextTick(adjustSize);
+  autoSize && type === "textarea" && adjustSize();
 });
 watch(
   () => inputValue.value,
@@ -53,20 +55,16 @@ watch(
     emit("update:value", newValue!);
   }
 );
-
+const lineHeight = 20; // 每行的高度
 const adjustSize = () => {
-  let textarea = textareaRef.value;
+  const textarea = textareaRef.value;
   textarea.style.height = "auto";
-  if (maxRow) {
-    textarea.style.maxHeight = maxRow * 24 + "px";
-  }
+  if (maxRows) textarea.style.maxHeight = maxRows * lineHeight + "px";
+
   const height = textarea.scrollHeight;
-  if (height) {
-    // 改变textarea高度达到自适应
-    textarea.style.height = height + "px";
-    const rowsNum = Math.round(height / 24);
-    textarea.style.overflowY = rowsNum > maxRow ? "scroll" : "hidden";
-  }
+  textarea.style.height = `${height}px`;
+  const rowsNum = Math.ceil(height / lineHeight);
+  textarea.style.overflowY = rowsNum > maxRows ? "scroll" : "hidden";
 };
 </script>
 <style lang="scss">
@@ -75,7 +73,7 @@ $border-color: #999;
 $border-color-hover: #10b981;
 $border-radius: 4px;
 $font-size: 12px;
-$box-shadow-color: rgba(16, 185, 129, 0.5);
+$box-shadow-color: rgba(16, 185, 129, 0.2);
 $red: #f1453d;
 
 .justd-input {
@@ -100,7 +98,7 @@ $red: #f1453d;
     }
 
     &:focus {
-      box-shadow: 0 0 0 0 $box-shadow-color;
+      box-shadow: 0 0 0 1.5px $box-shadow-color;
       outline: none;
       border-color: $border-color-hover;
     }
@@ -116,7 +114,6 @@ $red: #f1453d;
     }
   }
   > textarea {
-    // height: 32px;
     border: 1px solid $border-color;
     border-radius: 4px;
     padding: 4px 5px;
@@ -127,7 +124,7 @@ $red: #f1453d;
     }
 
     &:focus {
-      box-shadow: 0 0 0 0 $box-shadow-color;
+      box-shadow: 0 0 0 1.5px $box-shadow-color;
       outline: none;
       border-color: $border-color-hover;
     }
@@ -136,15 +133,30 @@ $red: #f1453d;
   &.error {
     > input {
       border-color: $red;
+
+      &:hover {
+        border-color: none;
+      }
+
+      &:focus {
+        box-shadow: 0 0 0 0.5px $red;
+        outline: none;
+        border-color: none;
+      }
     }
   }
 
   .icon-error {
-    fill: $red;
+    // fill: $red;
+  }
+  .j-icon {
+    width: 2em;
+    height: 2em;
   }
 
   .errorMessage {
     color: $red;
+    font-size: 1.5em;
   }
 }
 </style>
