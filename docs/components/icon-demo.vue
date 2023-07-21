@@ -38,7 +38,7 @@ const list = ref([
     > p {
       font-size: 14px;
     }
-    .j-icon {
+    .justd-icon {
       width: 2em;
       height: 2em;
     }

@@ -70,12 +70,11 @@ const inputValue = ref("1");
 ### 代码
 
 ```vue
-  <j-input type="textarea" placeholder="请输入内容" auto-size class="custom" />
-
- <j-input
+<j-input type="textarea" placeholder="请输入内容" auto-size class="custom" />
+<j-input
     type="textarea"
     placeholder="请输入内容"
     :auto-size="{ minRows: 2, maxRows: 4 }"
     class="custom"
-  />
+/>
 ```

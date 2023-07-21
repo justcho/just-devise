@@ -1,5 +1,5 @@
 <template>
-  <svg class="j-icon">
+  <svg class="justd-icon">
     <use :xlink:href="`#j-${name}`" :fill="color"></use>
   </svg>
 </template>
@@ -16,7 +16,7 @@ onMounted(() => {
 });
 </script>
 <style lang="scss">
-.j-icon {
+.justd-icon {
   width: 1em;
   height: 1em;
 }

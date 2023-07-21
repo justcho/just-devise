@@ -106,6 +106,10 @@ export default defineConfig({
             text: "Dialog 对话框",
             link: "/guide/dialog",
           },
+          {
+            text: "Popover 气泡弹出层",
+            link: "/guide/popover",
+          },
         ],
       },
     ],

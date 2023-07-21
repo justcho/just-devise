@@ -8,7 +8,7 @@
       :placeholder="placeholder"
     />
     <template v-if="error">
-      <j-icon name="fail" color="red" class="icon-error"></j-icon>
+      <j-icon name="fail" color="red"></j-icon>
       <span class="errorMessage">{{ error }}</span>
     </template>
   </div>
@@ -145,10 +145,7 @@ $red: #f1453d;
     }
   }
 
-  .icon-error {
-    // fill: $red;
-  }
-  .j-icon {
+  .justd-icon {
     width: 2em;
     height: 2em;
   }
