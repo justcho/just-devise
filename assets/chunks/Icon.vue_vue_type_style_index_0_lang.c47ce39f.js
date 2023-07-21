@@ -1,0 +1,1 @@
+import{d as o,j as n,a6 as _,o as s,c as t,k as a}from"./framework.b8c24856.js";const r={class:"j-icon"},c=["xlink:href","fill"],d=o({__name:"Icon",props:{name:{},color:{}},setup(l){return n(()=>{_(()=>import("./svg.a9c25327.js"),[])}),(e,i)=>(s(),t("svg",r,[a("use",{"xlink:href":`#j-${e.name}`,fill:e.color},null,8,c)]))}});export{d as _};
