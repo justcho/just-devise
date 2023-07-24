@@ -37,7 +37,7 @@ const props = defineProps<{
 const { type, autoSize, value } = props;
 
 const emit = defineEmits<{
-  (e: "update:value", value: string): void;
+  update: [value: string];
 }>();
 
 const inputValue = ref(value);

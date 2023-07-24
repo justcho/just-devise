@@ -29,7 +29,7 @@ const props = defineProps<{
 }>();
 // emit泛型
 const emit = defineEmits<{
-  (e: "update:visible", visible: boolean): void;
+  update: [visible: boolean];
 }>();
 
 const close = () => {

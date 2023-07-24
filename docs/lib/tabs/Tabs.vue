@@ -29,7 +29,7 @@ const props = defineProps<{
   selected?: string;
 }>();
 const emit = defineEmits<{
-  (e: "update:selected", title: string): void;
+  update: [selected: string];
 }>();
 
 const selectedItem = ref<HTMLDivElement>(null);
