@@ -1,14 +1,21 @@
 <template>
   <div class="justd-popover">
-    <div class="justd-popover-content">
-      <slot></slot>
+    <div
+      ref="contentRef"
+      class="justd-popover-content"
+      v-if="visible"
+      :class="{ [`position-${position}`]: true }"
+    >
+      <slot name="content"></slot>
     </div>
-    <span class="justd-popover-trigger" ref="triggerWrapper">
+    <span class="justd-popover-trigger" ref="triggerRef">
       <slot></slot>
     </span>
   </div>
 </template>
 <script lang="ts" setup>
+import { ref, watch } from "vue";
+
 const props = defineProps<{
   position: "top" | "left" | "right" | "bottom";
   trigger: "click" | "hover";
@@ -17,6 +24,14 @@ const props = defineProps<{
 const emits = defineEmits<{
   update: [visible: boolean];
 }>();
+const visible = ref(false);
+const triggerRef = ref<HTMLElement>(null);
+watch(
+  () => props.visible,
+  (val) => {
+    visible.value = val;
+  }
+);
 </script>
 <style lang="scss">
 $border-color: #333;
@@ -27,17 +42,13 @@ $border-radius: 4px;
   position: relative;
   .justd-popover-content {
     position: absolute;
-    left: 0;
-    z-index: 999;
+    border: 1px solid $border-color;
     border-radius: $border-radius;
-    box-shadow: 0 3px 6px -4px #0000001f, 0 6px 16px #00000014,
-      0 9px 28px 8px #0000000d;
-    padding: 8px 10px;
-    color: #fff;
-    background-color: #000000d9;
+    filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.5));
+    background: white;
+    padding: 0.5em 1em;
     max-width: 20em;
     word-break: break-all;
-    font-size: 14px;
 
     &::before,
     &::after {
