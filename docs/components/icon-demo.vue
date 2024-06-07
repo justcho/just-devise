@@ -22,6 +22,7 @@ const list = ref([
   { name: "copy", color: "#EEE685" },
   { name: "modify", color: "yellow" },
   { name: "enter", color: "	#FFE7BA" },
+  { name: "top", color: "black" },
 ]);
 </script>
 <style lang="scss" scoped>

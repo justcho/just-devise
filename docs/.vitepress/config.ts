@@ -110,6 +110,10 @@ export default defineConfig({
             text: "Popover 气泡弹出层",
             link: "/guide/popover",
           },
+          {
+            text: "BackTop 回到顶部",
+            link: "/guide/backTop",
+          },
         ],
       },
     ],
