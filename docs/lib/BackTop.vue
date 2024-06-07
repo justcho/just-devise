@@ -17,8 +17,12 @@
 <script lang="ts" setup>
 import _ from "lodash";
 import jIcon from "../lib/icons/Icon.vue";
-import { computed, onMounted, ref, useSlots } from "vue";
-import { easeInOutCubic, useEventListener } from "../use/BackTop/useBackTop";
+import { computed, onMounted, ref, useSlots, onUnmounted } from "vue";
+import {
+  easeInOutCubic,
+  useEventListener,
+  removeEventListener,
+} from "../use/BackTop/useBackTop";
 
 const lodash = _;
 
@@ -86,7 +90,10 @@ onMounted(() => {
   //   }
   //   containerEl.value = scrollEl.value;
   // }
-    useEventListener(containerEl.value, "scroll", handleScrollThrottle);
+  useEventListener(containerEl.value, "scroll", handleScrollThrottle);
+});
+onUnmounted(() => {
+  removeEventListener(containerEl.value, "scroll", handleScrollThrottle);
 });
 </script>
 

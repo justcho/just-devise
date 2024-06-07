@@ -1,12 +1,16 @@
 const cubic = (value: number): number => {
-    // eslint-disable-next-line no-magic-numbers
-    return value ** 3;
+  // eslint-disable-next-line no-magic-numbers
+  return value ** 3;
 };
 
 export const easeInOutCubic = (value: number): number =>
-// eslint-disable-next-line no-magic-numbers
-    value < 0.5 ? cubic(value * 2) / 2 : 1 - cubic((1 - value) * 2) / 2;
+  // eslint-disable-next-line no-magic-numbers
+  value < 0.5 ? cubic(value * 2) / 2 : 1 - cubic((1 - value) * 2) / 2;
 
 export const useEventListener = (el, event, callBack) => {
-    el.addEventListener(event, callBack);
+  el.addEventListener(event, callBack);
+};
+
+export const removeEventListener = (el, event, callBack) => {
+  el.removeEventListener(event, callBack);
 };
