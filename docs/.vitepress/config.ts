@@ -54,10 +54,10 @@ export default defineConfig({
             text: "Icon 图标",
             link: "/guide/icon",
           },
-          // {
-          //   text: "Typography 排版",
-          //   link: "/guide/typography",
-          // },
+          {
+            text: "Typography 排版",
+            link: "/guide/typography",
+          },
         ],
       },
       {
